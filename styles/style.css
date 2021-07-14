@@ -36,6 +36,25 @@ a {
 button:hover {
     animation: popup 1.2s ease-out;
     }
+/* navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+ul li button {
+    margin: 10px 20px;
+    padding: 10px;
+}
+.music {
+    margin: 0 10%;
+    padding: 2% 5%;
+}
+
+
 /* heading banner styles */
 .banner {
     display: flex;
@@ -116,6 +135,10 @@ footer i {
         padding: 0;
         width: 100%;
     }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .banner {
         display: flex;
         flex-direction: column;
@@ -140,6 +163,11 @@ footer i {
     .banner {
         display: flex;
         background-color: #2748A0;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        
     }    
     .player-quotes {
         display: grid;
