@@ -1,0 +1,37 @@
+/* utilities */
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    background-color: #2748A0;
+}
+button {
+    padding: 10px 24px;
+    background-color: #E5386D;
+    width: 168px;
+    height: 44px;
+}
+a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 88px;
+    height: 24px;
+}
+/* heading banner styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .head-line button{
+    margin-left: 156px;
+}
+header h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 121px 102px 27px 156px;
+}
+header img {
+    margin: 67px 141px 86px 102px;
+}
