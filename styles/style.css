@@ -1,5 +1,21 @@
+/* animations */
+@keyframes popup {
+    0%{
+        
+    }
+    50%{
+        
+        transform: scale(.5);
+    }
+    100%{
+        background-color: #ff034e;
+        transform: scale(1);
+
+    }
+}
 /* utilities */
 body {
+    background-color: #2748A0;
     font-family: 'Rubik', sans-serif;
     color: #FFFFFF;
     margin: 0;
@@ -17,6 +33,9 @@ a {
     color: #FFFFFF;
     
 }
+button:hover {
+    animation: popup 1.2s ease-out;
+    }
 /* heading banner styles */
 .banner {
     display: flex;
@@ -50,13 +69,11 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 25px;
     grid-row-gap: 25px;
-    background-color: #53D0EC;
     color: black;
 }
 .single-player {
-    
     text-align: center;
-    background-color: whitesmoke;
+    background-color: lightskyblue;
     padding: 15px;
     box-shadow: 0px 0px 10px black;
 }
@@ -66,6 +83,17 @@ a {
 }
 .quote {
    text-align: justify;
+}
+/* match styles */
+.match {
+    text-align: center;
+}
+.match-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    margin: 10%;
 }
 /* footer style */
 footer {
@@ -98,26 +126,35 @@ footer i {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 25px;
     }
-    
+    .match-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 15px;
+        grid-column-gap: 15px;
+        margin: 10%;
+    }
     
 }
 /* media queries for tablet */
 @media screen and (min-width:768px) and (max-width:1023px) {
-    body {
-        width: 100%;
-    }
     .banner {
         display: flex;
-        justify-content:center ;
-        align-items: center;
         background-color: #2748A0;
     }    
     .player-quotes {
         display: grid;
         padding: 5% 10% ;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 25px;
-        grid-row-gap: 25px;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        
+    }
+    .match-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 15px;
+        grid-column-gap: 15px;
+        margin: 10%;
     } 
 }
 
